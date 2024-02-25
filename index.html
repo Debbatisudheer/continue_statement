@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Validation</h1>
+        <label for="ageInput">Enter your age (between 18 and 100):</label>
+        <input type="number" id="ageInput" min="18" max="100">
+        <button onclick="validateAge()">Submit</button>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+     <div class="explanation">
+        <h2>Explanation of the continue statement</h2>
+        <ul>
+            <li>The logic behind the continue statement is to control the flow of execution within a loop.</li>
+            <li>When the continue statement is encountered inside a loop, it immediately stops the execution
+                of the current iteration of the loop and jumps to the next iteration, bypassing any remaining
+                code within the loop's body.</li>
+        </ul>
+    </div>
+     <div class="explanation">
+
+        <h2>Here's the logic in simple terms:</h2>
+        <ol>
+            <li>Encounter the continue statement:</li>
+                <p>When the program encounters the continue statement inside a loop, it realizes that it needs to skip the remaining code for the current iteration.</p>
+            <li>Skip the current iteration:</li>
+                <p>The program skips any code that comes after the continue statement within the loop's body.</p>
+            <li>Move to the next iteration:</li>
+                <p>After skipping the remaining code, the program moves on to the next iteration of the loop and begins executing the loop's body again from the beginning.</p>
+        </ol>
+        <p>By using the continue statement, you can effectively control the flow of execution within a loop based on certain conditions. This allows you to skip over certain iterations of the loop and continue processing the remaining iterations or data, enhancing the flexibility and efficiency of your code.</p>
+    </div>
+     <div class="explanation">
+        <h2>Benefits and Strategies of the continue statement</h2>
+        <p>The continue statement offers several benefits and strategies for controlling the flow of execution within loops:</p>
+        <ul>
+            <li><strong>Skipping Over Unnecessary Code:</strong> By using continue, you can skip over certain iterations of a loop when certain conditions are met. This helps in avoiding unnecessary computations or processing for specific cases, leading to improved efficiency and performance.</li>
+            <li><strong>Focus on Relevant Data:</strong> continue allows you to filter out irrelevant data or cases during loop iterations, ensuring that you focus only on the data or cases that are relevant to your task or objective. This helps in maintaining clarity and focus within your code.</li>
+            <li><strong>Enhanced Readability:</strong> Using continue can make your code more readable by clearly indicating the conditions under which certain iterations of the loop are skipped. This improves code maintainability and makes it easier for other developers to understand the logic behind your code.</li>
+            <li><strong>Granular Control:</strong> continue provides granular control over loop execution, allowing you to tailor the behavior of your loop based on specific conditions. This flexibility enables you to implement complex processing logic and handle diverse scenarios within your code.</li>
+            <li><strong>Error Handling:</strong> In error handling scenarios, continue can be used to gracefully handle certain types of errors or exceptions within loops without halting the entire process. This ensures that your program can continue executing even in the presence of errors, leading to more robust and resilient applications.</li>
+            <li><strong>Optimizing Performance:</strong> By skipping unnecessary iterations or computations using continue, you can optimize the performance of your code, especially in situations involving large datasets or complex processing tasks. This can result in faster execution times and improved responsiveness of your application.</li>
+        </ul>
+    </div>
+     <div class="strategies">
+        <h2>Strategies for Using the continue Statement</h2>
+        <p>In terms of strategies, here are some common scenarios where you might consider using continue:</p>
+        <ul>
+            <li><strong>Data Filtering:</strong> Use continue to filter out irrelevant data or cases during data processing tasks.</li>
+            <li><strong>Input Validation:</strong> Employ continue to validate user inputs and handle invalid inputs gracefully in interactive applications.</li>
+            <li><strong>Error Handling:</strong> Use continue to handle certain types of errors or exceptions within loops without interrupting the flow of execution.</li>
+            <li><strong>Performance Optimization:</strong> Utilize continue to skip unnecessary computations or iterations, thereby optimizing the performance of your code.</li>
+        </ul>
+        <p>Overall, the continue statement is a valuable tool for controlling loop execution and implementing various programming strategies to achieve specific goals in your applications and projects.</p>
+    </div>
+     <div class="complexity">
+        <h2>Time and Space Complexity with Continue Statement</h2>
+        <p><strong>Time Complexity:</strong></p>
+        <p>The time complexity of code involving a continue statement depends on the complexity of the loop body and the conditions that trigger the continue. It may reduce the overall time complexity by avoiding unnecessary computations if the continue statement allows the loop to skip a significant portion of the loop body for many iterations. However, if the continue statement is rarely triggered or introduces additional conditional checks, its impact on time complexity may be negligible.</p>
+        <p><strong>Space Complexity:</strong></p>
+        <p>The space complexity of code involving a continue statement depends on the data structures and operations within the loop body. The continue statement itself does not consume additional memory. However, if the loop body involves creating or modifying data structures, the space complexity may be affected by the operations performed within the loop, rather than the continue statement.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 @sudheer debbati. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
